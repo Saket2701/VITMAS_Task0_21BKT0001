@@ -1,75 +1,41 @@
 # BASIC GIT COMMANDS
 Git is distributed version-control system for tracking changes in any set of files. Here are the few basic commands used in git.
 
-git init
-This command turns a directory into an empty Git repository.
+## git init
+git init is one way to start a new project with Git. To start a repository, use either git init.
 
-git init [repository name]
-git config
-The command sets the author name and email adress respectively to be used with the commits.
+## git config
+The git config command is a convenience function that is used to set Git configuration values on a global or local project level. These configuration levels correspond to . gitconfig text files.
 
-git config -global user.name "[name]"
-git config -global user.email "[email]"
-git add
-The following command adds a file to the staging area.
+## git add
+The git add selects that file, and moves it to the staging area, marking it for inclusion in the next commit. You can select all files, a directory, specific files, or even specific parts of a file for staging and commit.
 
-git add [file]
-The following command adds one or more to the staging area.
+## git commit
+The git commit command captures a snapshot of the project's currently staged changes. Committed snapshots can be thought of as “safe” versions of a project—Git will never change them unless you explicitly ask it to.
 
-git add *
-git commit
-This command records or snapshots the file permanently in the version history.
+## git status
+The git status command displays the state of the working directory and the staging area. It lets you see which changes have been staged, which haven't, and which files aren't being tracked by Git.
 
-git commit -m "[Type in the commit message]"
-This command commits any files you’ve added with the git add command and also commits any files you’ve changed since then.
+## git branch
+The git branch command lets you create, list, rename, and delete branches. It doesn't let you switch between branches or put a forked history back together again. 
 
-git command -a
-git status
-This command returns the current state of the repository.
+## git checkout
+The git checkout refers to the action of swaping between different repository branches/files/commits. It helps in switching between different branches that have been created by git branch.
 
-git status
-git branch
-To determine which branch the local repository is on, add a branch, or delete a branch.
+## git merge
+Merging is Git's way of putting a forked history back together again. The git merge command lets you take the independent lines of development created by git branch and integrate them into a single branch.
 
-git branch
-git branch [branch name] (Creates a new branch)
-git branch -d [branch name] (Deletes the feature branch)
-git checkout
-To start working in a different branch, use git checkout to switch branches.
+## git remote
+In Git, the term remote is concerned with the remote repository. It is a shared repository that all team members use to exchange their changes. A remote repository is stored on a code hosting service like an internal server, GitHub, Subversion, and more.
 
-git checkout
-git merge
-Integrate branches together.
+## git clone
+The git clone is a command-line utility which is used to make a local copy of a remote repository. It accesses the repository through a remote URL.
 
-git merge [branch name]
-git remote
-To connect a local repository with a remote repository.
+## git pull
+The git pull is a Git command used to update the local version of a repository from a remote. It is one of the four commands that prompts network interaction by Git. By default, git pull does two things. 
 
-git remote add [variable name] [remote server link]
-git clone
-To create a local working copy of an existing remote repository.
+## git push
+The git push command is used to upload local repository content to a remote repository. Pushing is how you transfer commits from your local repository to a remote repo. It's the counterpart to git fetch , but whereas fetching imports commits to local branches, pushing exports commits to remote branches.
 
-git clone [url]
-git pull
-To get the latest version of a repository run git pull.
-
-git pull [Repository Link]
-git push
-This command sends the committed changes of master branch to your remote repository.
-
-git push [variable name] master
-This command sends the branch commits to your remote repository.
-
-git push [variable name] [branch]
-This command pushes all branches to your remote repository.
-
-git push -all [variable name]
-This command deletes a branch on your remote repository.
-
-git push [variable name] :[branch name]
-git rm
-This command deletes the file from your working directory and stages the deletion.
-
-git rm [file]
-git log
-This command is used to list the ver
+## git log
+Git log is a utility tool to review and read a history of everything that happens to a repository. Multiple options can be used with a git log to make history more specific. Generally, the git log is a record of commits.
