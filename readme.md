@@ -39,3 +39,6 @@ The git pull is a Git command used to update the local version of a repository f
 
 ## 13.git log
 Git log is a utility tool to review and read a history of everything that happens to a repository. Multiple options can be used with a git log to make history more specific. Generally, the git log is a record of commits.
+
+## Git video demonstration link 
+https://drive.google.com/file/d/1BQUuxvHpHZ_spqybFrTNzKLSehbUg8qS/view?usp=sharing
